@@ -1,1 +1,56 @@
-<h1> Dom Play assignment goes here</h1>
+<html>
+    <head>
+        <title>DOM PLay</title>
+        <style>
+            /*
+            #clickSpans span {
+                background-color: aqua;
+                */
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1> Dom Play</h1>
+    <div id = "clickSpans">
+        <p><span data-actor="hamlet">Hamlet: To be or not to be, that is the question.</span></p>
+        <p><span data-actor="skull">Skull: Don't ask me I am only a skull.</span></p>
+        <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
+        <p><span data-actor="skull">Skull: Nothing, I am only a figment of your imagination.</span></p>
+        <p><span data-actor="hamlet">Hamlet: Oh Good. I thought I was going crazy.</span></p>
+    </div>
+        <script>
+            //spans is var so dat is global.
+           var spans = document.querySelectorAll("#clickSpans span");
+
+           //console.log(spans);
+        
+            for(const mySpan of spans){
+
+                mySpan.addEventListener("click", function(event){
+
+                    highlightActor(mySpan.dataset.actor);
+
+                });
+            }
+
+           
+           function highlightActor(myActor){
+
+              //alert("Hello from highlightActor: " + myActor);
+              for(const mySpan of spans){
+                    if (mySpan.dataset.actor == myActor){//current actor, hightlight
+                    mySpan.style.backgroundColor = 'yellow';
+                    mySpan.style.fontWeight='bold';
+                    } else {//not current actor? change to white
+                    mySpan.style.backgroundColor = 'white';
+                    mySpan.style.fontWeight='normal';
+
+                }
+            }
+        }
+        
+        </script>
+    </body>
+</html>
+
