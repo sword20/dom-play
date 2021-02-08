@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
-    background-color: rgb(85, 118, 151);
+    background-color: rgb(255, 230, 0);
     font-family: 'Verdana', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
@@ -73,11 +73,13 @@ span.header {
 
 }
 
-ul.omit {
-    /*margin: 1em;  Top Right Bottom Left (TRBL) */
-    background-color: rgba(100, 100, 100, 0.0);
-    margin-left: 15px;
+span {
+    background-color: rgba(255, 255, 255, 0.5);
 
+}
+
+.action {
+    background-color: aqua;
 }
 
 
@@ -85,13 +87,6 @@ ul.omit {
 
 /* DESKTOP */
 @media all and (min-width:1200px) {
-    main {
-        background-image: url("images/BG.png");
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
 
     main.wrapper {
         width: 80%;
@@ -104,23 +99,11 @@ ul.omit {
         
     }
     
-    picture.profile img {
-        width: 50%;
-        float: left;
-        margin-right: 2em;
-    }
 
 }
 
 /* TABLET */
 @media all and (min-width:501px) and (max-width:1199px) {
-    main {
-        background-image: url("images/BG.png");
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
 
     main.wrapper {
         width: 90%;
@@ -132,25 +115,11 @@ ul.omit {
         padding-left: 1%;
         
     }
-
-    picture.profile img {
-        width: 50%;
-        float: right;
-        margin-left: 1em;
-    }
     
 }
 
 /* PHONE */
 @media all and (max-width:500px) {
-    main {
-        background-image: url("images/BG.png");
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
     main.wrapper {
         width: 100%;
     }
@@ -159,10 +128,6 @@ ul.omit {
         width: 99%;
         padding-left: 1%;
         
-    }
-
-    picture.profile img {
-        width: 100%;
     }
     
 }
