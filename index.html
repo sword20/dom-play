@@ -1,24 +1,93 @@
 <html>
     <head>
         <title>DOM PLay</title>
+        <link rel="stylesheet" href="css/script.css" />
+        <link rel="stylesheet" href="js/script.css" />
         <style>
-            /*
-            #clickSpans span {
-                background-color: aqua;
-                */
+            body {
+                background-image: url(images/season-10-always-sunny-in-philadelphia-netflix-streamingjpg-3edb29c925339c52.jpg);
             }
 
         </style>
     </head>
     <body>
         <h1> Dom Play</h1>
+    <main class="wrapper">
+        <h3>Dennis has jammed a small crowbar into one of his casts and
+            Dee is attempting to cut it off with garden shears. Mac
+            watches. Frank soaks his arm-cast in a bowl of water.</h3>
     <div id = "clickSpans">
-        <p><span data-actor="hamlet">Hamlet: To be or not to be, that is the question.</span></p>
-        <p><span data-actor="skull">Skull: Don't ask me I am only a skull.</span></p>
-        <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
-        <p><span data-actor="skull">Skull: Nothing, I am only a figment of your imagination.</span></p>
-        <p><span data-actor="hamlet">Hamlet: Oh Good. I thought I was going crazy.</span></p>
+        <p><span data-actor="dennis">
+            DENNIS:<br>
+            If I pull it harder it’s gonna dig
+            into his leg.</span></p>
+        <p><span data-actor="dee">
+            DEE:<br>
+            I need to be able to get the shears
+            further down.</span></p>
+        <p><span data-actor="charlie">
+            CHARLIE:<br>
+            Just do it, dude.</span></p>
+        <p><span data-actor="dennis">
+            DENNIS:<br>
+            Are you sure you don’t want a
+            doctor to do this?</span></p>
+        <p><span data-actor="charlie">
+            CHARLIE:<br>
+            I’m a billionaire all of a sudden?
+            Pull the crowbar, Dennis.
+           </span></p>
+    </div> 
+    <h3>Mac grabs the crowbar from Dennis and pulls with all his
+            strength. Dee thrusts the shears further down.</h3>
+    <div id = "clickSpans">
+        <p><span data-actor="charlie">
+            CHARLIE:<br>
+            AHHHH! It’s digging into my leg!</span></p>
+        <p><span data-actor="dennis">
+            DENNIS:<br>
+            I told you.</span></p>
+        <p><span data-actor="charlie">
+            CHARLIE:<br>
+            Stop! Stop it!</span></p>
+        <p><span data-actor="mac">
+            MAC:<br>
+            Do want this cast on or off, Charlie?</span></p>
+        <p><span data-actor="frank">
+            FRANK:<br>
+            If you soak it in water, it gets really soft and you can just rip it off.</span></p>
+        <p><span data-actor="dee">
+            DEE:<br>
+            Nobody asked you, Dad. Why are you even here?</span></p>
+        <p><span data-actor="frank">
+            FRANK:<br>
+            I’m hanging with the gang.</span></p>
+        <p><span data-actor="dee">
+            DEE:<br>
+            You’re not in our gang.</span></p>
+        <p><span data-actor="dennis">
+            DENNIS(to Dee):<br>
+            Neither are you.</span></p>
+        <p><span data-actor="dee">
+            DEE:<br>
+            Yes, I am.</span></p>
+        <p><span data-actor="dennis">
+            DENNIS:<br>
+            No. The gang is me, Mac and Charlie.</span></p>
+        <p><span data-actor="frank">
+            FRANK:<br>
+            Dennis, let your sister be in the gang.</span></p>
+        <p><span data-actor="dennis">
+            DENNIS:<br>
+            No, she’s not allowed in the gang. Right, guys?</span></p>
+        <p><span data-actor="mac">
+            MAC:<br>
+            I have no idea what you’re talking about.</span></p>
+        <p><span data-actor="charlie">
+            CHARLIE:<br>
+            Me either.</span></p>
     </div>
+    </main>
         <script>
             //spans is var so dat is global.
            var spans = document.querySelectorAll("#clickSpans span");
