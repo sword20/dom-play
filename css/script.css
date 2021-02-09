@@ -43,12 +43,13 @@ h2,h3 {
 }
 
 a {
-    color:skyblue;
+    color:darkcyan;
     text-decoration: none;
 }
 
 a:hover {
     background-color: darkcyan;
+    color: white;
     text-decoration: none;
 }
 
